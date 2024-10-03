@@ -11,12 +11,12 @@
 <body>
     <header>
         <div class="container mx-auto flex flex-wrap justify-between items-center bg-gray-950 p-2">
-            <div class="flex items-center gap-4 p-2">
+            <div class="flex items-center gap-4 p-2 flex-1">
                 <div class="logo">
-                    <img src="../public/assets/TurtleUp.svg" alt="TurtleStream logo" class="h-12">
+                    <a href="#Bienvenue"><img src="../public/assets/TurtleUp.svg" alt="TurtleStream logo" class="h-12"></a>
                 </div>
                 <div class="bg-primary rounded p-2">
-                    <h1 class="text-third">TurtleStream</h1>
+                    <a href="#Bienvenue"><h1 class="text-third" href="#Bienvenue">TurtleStream</h1></a>
                 </div>
             </div>
             <div class="search flex-grow mx-4 text-center mt-4 md:mt-0">
@@ -26,7 +26,8 @@
             <div class="bg-primary rounded p-2 mt-4 md:mt-0">
                 <nav>
                     <ul class="flex flex-wrap space-x-4">
-                        <li><a href="#" class="text-third hover:text-white">A Propos</a></li>
+                        <li><a href="#aPropos" class="text-third hover:text-white">A Propos</a></li>
+                        <li><a href="#aLaUne" class="text-third hover:text-white">A La Une</a></li>
                         <li><a href="#" class="text-third hover:text-white">Film</a></li>
                         <li><a href="#" class="text-third hover:text-white">Séries</a></li>
                         <li><a href="#" class="text-third hover:text-white">Contact</a></li>
@@ -36,7 +37,7 @@
         </div>
     </header>
 
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4" id="Bienvenue">
         <div id="turtlewrap" class="mb-8">
             <div class="container rounded mx-auto flex flex-col justify-center items-center bg-primary bg-opacity-90 p-8 max-w-md text-center">
                 <h1 class="text-4xl text-white">Bienvenue sur TurtleStream</h1>
@@ -46,13 +47,16 @@
 
         <section class="posters py-12">
             <div class="container mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-8 text-primary">A Propos de TurtleStream</h2>
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary" id="aPropos">A Propos de TurtleStream</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4">
                     <div class="bg-secondary p-6 rounded-lg shadow-md col-span-1 md:col-span-2">
                         <h3 class="text-xl font-semibold mb-4 text-primary">Présentation de TurtleStream</h3>
                         <p class="text-white">
-                            Bienvenue sur <b class="text-primary">TurtleStream</b>, votre plateforme de streaming dédiée aux tortues !
-                            Nous vous proposons une sélection unique de films et séries qui mettent à l'honneur ces incroyables reptiles.
+                            Bienvenue sur <b class="text-primary">TurtleStream</b>, votre plateforme de streaming
+                             dédiée aux tortues ! Nous vous proposons une sélection unique de films et séries qui mettent
+                              à l'honneur ces incroyables reptiles. Que vous soyez un passionné de la nature ou simplement
+                               curieux de découvrir l'univers fascinant des tortues, notre site est conçu pour vous offrir
+                                des heures de divertissement éducatif et captivant.
                         </p>
                     </div>
                     <div class="bg-secondary p-6 rounded-lg shadow-md row-span-1 md:row-span-2">
@@ -67,37 +71,44 @@
                     <div class="bg-secondary p-6 rounded-lg shadow-md col-span-1 md:col-span-2">
                         <h3 class="text-xl font-semibold mb-4 text-primary">Accessible à tous</h3>
                         <p class="text-white">
-                            <b class="text-primary">TurtleStream</b> est accessible à tous, quel que soit votre âge. Nos contenus sont adaptés aussi bien aux enfants qu'aux adultes.
+                            Nous croyons fermement que l'amour et l'appréciation des tortues doivent être partagés par tous, quel que soit l'âge,
+                             le niveau de connaissance ou les compétences technologiques de chacun. C'est pourquoi <b class="text-primary">TurtleStream</b> s'efforce de rendre
+                              ses contenus accessibles et inclusifs pour un large public, qu'il s'agisse d'enfants, d'adolescents, d'adultes ou de seniors.
                         </p>
                     </div>
                 </div>
                 <div class="bg-secondary p-6 shadow-md mt-4 mx-4">
                     <h3 class="text-xl font-semibold mb-4 text-primary">Une plateforme spécialisée</h3>
                     <p class="text-white">
-                        <b class="text-primary">TurtleStream</b> vous propose une expérience unique, centrée exclusivement sur les tortues.
+                        Pourquoi <b class="text-primary">TurtleStream</b> ? Parce que nous croyons que les tortues méritent leur propre place dans l'univers du streaming !
+                         Que vous soyez amateur de documentaires animaliers, passionné par l’évolution de la nature ou simplement à la recherche
+                          de programmes amusants pour toute la famille, <b class="text-primary">TurtleStream</b> vous propose une expérience unique, centrée exclusivement sur les tortues.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="py-12">
+        <section class="py-12" id="aLaUne">
             <div class="container mx-auto bg-secondary p-6 rounded-lg shadow-md text-center">
                 <h2 class="text-3xl font-bold text-center mb-8 text-primary">Affiches Populaires</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="text-center md:row-span-2">
                         <img src="../public/assets/TurtleWorld.jpeg" alt="Poster 1" class="h-96 w-auto mx-auto mb-4">
                         <h3 class="text-xl font-semibold mb-2 text-primary">Le Monde des Tortues</h3>
-                        <p class="text-white">Un documentaire captivant sur la vie des tortues à travers le monde.</p>
+                        <p class="text-white">Le Monde des Tortues est un documentaire captivant qui explore la vie
+                             fascinante des tortues à travers le monde et les défis qu’elles affrontent pour survivre.</p>
                     </div>
                     <div class="text-center">
                         <img src="../public/assets/TurtleSamy.svg" alt="Poster 2" class="h-48 mx-auto mb-4">
-                        <h3 class="text-xl font-semibold mb-2 text-primary">Le Voyage Extraordinaire de Samy</h3>
-                        <p class="text-white">Suivez Samy, la petite tortue, dans une aventure à travers les océans.</p>
+                            <h3 class="text-xl font-semibold mb-2 text-primary">Le Voyage Extraordinaire de Samy</h3>
+                            <p class="text-white">Dans Le Voyage Extraordinaire de Samy, suivez la petite tortue Samy
+                                dans une aventure émouvante à travers les océans, remplie de découvertes et de dangers.</p>
                     </div>
                     <div class="text-center">
                         <img src="../public/assets/TurtleNinja.svg" alt="Poster 3" class="h-48 mx-auto mb-4">
                         <h3 class="text-xl font-semibold mb-2 text-primary">NinjaTurtle</h3>
-                        <p class="text-white">Quatre tortues mutantes combattent le crime à New York.</p>
+                        <p class="text-white">NinjaTurtle suit quatre tortues mutantes expertes en arts martiaux qui
+                             combattent le crime à New York. Action, humour et combats épiques sont au rendez-vous !</p>
                     </div>
                 </div>
             </div>
@@ -107,15 +118,15 @@
     <footer>
         <div class="container mx-auto flex flex-wrap justify-center gap-8 items-center bg-gray-950 p-4">
             <div class="logo flex items-center space-x-4">
-                <img src="../public/assets/TurtleDown.svg" alt="TurtleStream logo" class="h-20">
+                <a href="#Bienvenue"><img src="../public/assets/TurtleDown.svg" alt="TurtleStream logo" class="h-20"></a>
                 <div class="bg-primary rounded p-2">
-                    <h1 class="text-third">© 2024 TurtleStream</h1>
+                    <a href="#Bienvenue"><h1 class="text-third">© 2024 TurtleStream</h1></a>
                 </div>
             </div>
             <div class="flex space-x-4 text-4xl">
-                <i class="fa-brands fa-x-twitter text-primary"></i>
-                <i class="fa-brands fa-instagram text-primary"></i>
-                <i class="fa-brands fa-facebook text-primary"></i>
+                <a href="https://x.com/CyberTurtlesNFT"><i class="fa-brands fa-x-twitter text-primary" href=""></i></a>
+                <a href="https://www.instagram.com/le_refuge_des_tortues/"></a><i class="fa-brands fa-instagram text-primary"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61565092260230"></a><i class="fa-brands fa-facebook text-primary"></i></a>
             </div>
             <div class="explore-links flex flex-col space-y-2">
                 <a href="#" class="text-white hover:text-primary">Explorer :</a>
