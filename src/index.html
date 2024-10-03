@@ -5,102 +5,130 @@
     <script src="https://kit.fontawesome.com/0862ca75af.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../public/css/output.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/assets/TurtleUp.svg" type="image/x-icon">
     <title>TurtleStream</title>
 </head>
 <body>
     <header>
-        <div class="container mx-auto flex justify-between items-center bg-gray-950 p-4">
-            <div class="flex items-center gap-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center bg-gray-950 p-2">
+            <div class="flex items-center gap-4 p-2">
                 <div class="logo">
-                    <img src="../public/assets/logoTurtle 1.svg" alt="TurtleStream logo" class="h-12">
+                    <img src="../public/assets/TurtleUp.svg" alt="TurtleStream logo" class="h-12">
                 </div>
-                <div class="bg-primary rounded p-2 ">
+                <div class="bg-primary rounded p-2">
                     <h1 class="text-third">TurtleStream</h1>
                 </div>
             </div>
-            <div class="search flex-grow mx-4">
-                <form class="flex items-center">
-                    <input type="text" name="query" placeholder="Rechercher..." class="p-2 border border-gray-300 rounded-l">
-                    <button type="submit" class="p-2 bg-primary border text-white rounded-r">Rechercher</button>
-                </form>
+            <div class="search flex-grow mx-4 text-center mt-4 md:mt-0">
+                <input type="text" name="query" placeholder="Rechercher..." class="p-2 border border-gray-300 rounded-l w-full md:w-auto">
+                <button type="submit" class="p-2 bg-primary border text-white rounded-r w-full md:w-auto">Rechercher</button>
             </div>
-            <div class="bg-primary rounded p-2">
+            <div class="bg-primary rounded p-2 mt-4 md:mt-0">
                 <nav>
-                    <ul class="flex space-x-4">
-
+                    <ul class="flex flex-wrap space-x-4">
                         <li><a href="#" class="text-third hover:text-white">A Propos</a></li>
                         <li><a href="#" class="text-third hover:text-white">Film</a></li>
                         <li><a href="#" class="text-third hover:text-white">Séries</a></li>
                         <li><a href="#" class="text-third hover:text-white">Contact</a></li>
-                        <li><a href="#" class="text-third hover:text-white">Séries</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <div>
-        <div>
-            <div class="background-image" style="background-image: url('/public/assets/logoTurtle 2.svg'); background-size: cover; background-position: center; height: 90vh; display: flex; justify-content: center; align-items: center;">
-                <div class="container rounded mx-auto flex flex-col justify-center items-center bg-primary bg-opacity-75 rounded-lg p-8 max-w-md text-center">
-                    <h1 class="text-4xl text-white">Bienvenue sur TurtleStream</h1>
-                    <p class="text-xl text-white mt-4">Le site de streaming gratuit et sans pub pour regarder toutes sortes de tortues !</p>
-                </div>
+
+    <div class="container mx-auto px-4">
+        <div id="turtlewrap" class="mb-8">
+            <div class="container rounded mx-auto flex flex-col justify-center items-center bg-primary bg-opacity-90 p-8 max-w-md text-center">
+                <h1 class="text-4xl text-white">Bienvenue sur TurtleStream</h1>
+                <p class="text-xl text-white mt-4">Le site de streaming gratuit et sans pub pour regarder toutes sortes de tortues !</p>
             </div>
         </div>
-        <div>
-            <section class="about py-12 bg-gray-100">
+
+        <section class="posters py-12">
             <div class="container mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-8">A Propos de TurtleStream</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Notre Mission</h3>
-                    <p class="text-gray-700">Offrir un service de streaming gratuit et sans publicité pour les passionnés de tortues.</p>
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">A Propos de TurtleStream</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4">
+                    <div class="bg-secondary p-6 rounded-lg shadow-md col-span-1 md:col-span-2">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Présentation de TurtleStream</h3>
+                        <p class="text-white">
+                            Bienvenue sur <b class="text-primary">TurtleStream</b>, votre plateforme de streaming dédiée aux tortues !
+                            Nous vous proposons une sélection unique de films et séries qui mettent à l'honneur ces incroyables reptiles.
+                        </p>
+                    </div>
+                    <div class="bg-secondary p-6 rounded-lg shadow-md row-span-1 md:row-span-2">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Notre mission</h3>
+                        <p class="text-white">
+                            Chez <b class="text-primary">TurtleStream</b>, notre mission est simple : vous plonger
+                             dans le monde extraordinaire des tortues à travers des contenus vidéos de qualité.
+                              Des documentaires sur leurs habitats naturels aux films d'animation où elles sont les héroïnes,
+                               chaque programme a été soigneusement sélectionné pour enrichir votre compréhension et amour de ces créatures fascinantes.
+                        </p>
+                    </div>
+                    <div class="bg-secondary p-6 rounded-lg shadow-md col-span-1 md:col-span-2">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Accessible à tous</h3>
+                        <p class="text-white">
+                            <b class="text-primary">TurtleStream</b> est accessible à tous, quel que soit votre âge. Nos contenus sont adaptés aussi bien aux enfants qu'aux adultes.
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Notre Vision</h3>
-                    <p class="text-gray-700">Devenir la plateforme de référence pour tous les amateurs de tortues à travers le monde.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Nos Valeurs</h3>
-                    <p class="text-gray-700">Respect, Passion, et Engagement envers la protection et la connaissance des tortues.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Notre Histoire</h3>
-                    <p class="text-gray-700">Fondé en 2021, TurtleStream a été créé par des amoureux des tortues pour partager leur passion.</p>
-                </div>
+                <div class="bg-secondary p-6 shadow-md mt-4 mx-4">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Une plateforme spécialisée</h3>
+                    <p class="text-white">
+                        <b class="text-primary">TurtleStream</b> vous propose une expérience unique, centrée exclusivement sur les tortues.
+                    </p>
                 </div>
             </div>
-            </section>
-        </div>
+        </section>
+
+        <section class="py-12">
+            <div class="container mx-auto bg-secondary p-6 rounded-lg shadow-md text-center">
+                <h2 class="text-3xl font-bold text-center mb-8 text-primary">Affiches Populaires</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="text-center md:row-span-2">
+                        <img src="../public/assets/TurtleWorld.jpeg" alt="Poster 1" class="h-96 w-auto mx-auto mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-primary">Le Monde des Tortues</h3>
+                        <p class="text-white">Un documentaire captivant sur la vie des tortues à travers le monde.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="../public/assets/TurtleSamy.svg" alt="Poster 2" class="h-48 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-primary">Le Voyage Extraordinaire de Samy</h3>
+                        <p class="text-white">Suivez Samy, la petite tortue, dans une aventure à travers les océans.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="../public/assets/TurtleNinja.svg" alt="Poster 3" class="h-48 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-primary">NinjaTurtle</h3>
+                        <p class="text-white">Quatre tortues mutantes combattent le crime à New York.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
     <footer>
-        <div class="container mx-auto flex justify-between items-center bg-gray-950 p-4">
+        <div class="container mx-auto flex flex-wrap justify-center gap-8 items-center bg-gray-950 p-4">
             <div class="logo flex items-center space-x-4">
-                <img src="../public/assets/logoTurtle 3.svg" alt="TurtleStream logo" class="h-20">
+                <img src="../public/assets/TurtleDown.svg" alt="TurtleStream logo" class="h-20">
                 <div class="bg-primary rounded p-2">
-                    <h1 class="text-third">© 2021 TurtleStream</h1>
+                    <h1 class="text-third">© 2024 TurtleStream</h1>
                 </div>
             </div>
-            <div class="flex space-x-4 text-4xl flex-col">
+            <div class="flex space-x-4 text-4xl">
                 <i class="fa-brands fa-x-twitter text-primary"></i>
                 <i class="fa-brands fa-instagram text-primary"></i>
                 <i class="fa-brands fa-facebook text-primary"></i>
             </div>
             <div class="explore-links flex flex-col space-y-2">
+                <a href="#" class="text-white hover:text-primary">Explorer :</a>
                 <a href="#" class="text-white hover:text-primary">A Propos</a>
+                <a href="#" class="text-white hover:text-primary">Séries</a>
                 <a href="#" class="text-white hover:text-primary">Film</a>
-                <a href="#" class="text-white hover:text-primary">Série</a>
-                <a href="#" class="text-white hover:text-primary">Film</a>
-                <a href="#" class="text-white hover:text-primary">Série</a>
             </div>
-            
             <div class="explore-links flex flex-col space-y-2">
-                <a href="#" class="text-white hover:text-primary">Ressources:</a>
+                <a href="#" class="text-white hover:text-primary">Ressources :</a>
                 <a href="#" class="text-white hover:text-primary">Blog</a>
                 <a href="#" class="text-white hover:text-primary">Affiches populaires</a>
                 <a href="#" class="text-white hover:text-primary">Contact</a>
             </div>
-            
         </div>
     </footer>
 </body>
