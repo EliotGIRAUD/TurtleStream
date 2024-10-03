@@ -39,7 +39,7 @@
 
     <div class="container mx-auto px-4" id="Bienvenue">
         <div id="turtlewrap" class="mb-8">
-            <div class="container rounded mx-auto flex flex-col justify-center items-center bg-primary bg-opacity-90 p-8 max-w-md text-center">
+            <div class="container rounded mx-auto flex flex-col justify-center items-center p-8 max-w-md text-center" style="background: linear-gradient(180deg, #ff6201 0%, rgba(0, 0, 0, 0.95) 100%);">
                 <h1 class="text-4xl text-white">Bienvenue sur TurtleStream</h1>
                 <p class="text-xl text-white mt-4">Le site de streaming gratuit et sans pub pour regarder toutes sortes de tortues !</p>
             </div>
@@ -89,26 +89,37 @@
         </section>
 
         <section class="py-12" id="aLaUne">
-            <div class="container mx-auto bg-secondary p-6 rounded-lg shadow-md text-center">
+            <div class="container mx-auto bg-secondary p-6 rounded-[17px] shadow-md text-center" style="background: linear-gradient(180deg, #913A04 0%, rgba(0, 0, 0, 0.35) 100%);">
                 <h2 class="text-3xl font-bold text-center mb-8 text-primary">Affiches Populaires</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="text-center md:row-span-2">
-                        <img src="../public/assets/TurtleWorld.jpeg" alt="Poster 1" class="h-96 w-auto mx-auto mb-4">
+                    <div class="text-center md:row-span-2 flex flex-col items-center">
+                        <img src="../public/assets/TurtleWorld.jpeg" alt="Poster 1" class="h-96 w-auto mx-auto mb-4 max-w-[450px]">
                         <h3 class="text-xl font-semibold mb-2 text-primary">Le Monde des Tortues</h3>
-                        <p class="text-white">Le Monde des Tortues est un documentaire captivant qui explore la vie
+                        <p class="text-white  max-w-[450px]">Le Monde des Tortues est un documentaire captivant qui explore la vie
                              fascinante des tortues à travers le monde et les défis qu’elles affrontent pour survivre.</p>
                     </div>
-                    <div class="text-center">
-                        <img src="../public/assets/TurtleSamy.svg" alt="Poster 2" class="h-48 mx-auto mb-4">
+                    <div class="flex gap-10 items-center mb-8">
+                        <!-- Samy : Image à gauche, texte à droite -->
+                        <div class="text-center">
+                            <img src="../public/assets/TurtleSamy.svg" alt="Poster 2" class="h-64 mx-auto mb-4 shadow-md">
+                        </div>
+                        <div class="w-1/2 text-left pl-4">
                             <h3 class="text-xl font-semibold mb-2 text-primary">Le Voyage Extraordinaire de Samy</h3>
-                            <p class="text-white">Dans Le Voyage Extraordinaire de Samy, suivez la petite tortue Samy
-                                dans une aventure émouvante à travers les océans, remplie de découvertes et de dangers.</p>
+                            <p class="text-white">Dans Le Voyage Extraordinaire de Samy, suivez la petite tortue Samy dans une aventure
+                                émouvante à travers les océans, remplie de découvertes et de dangers.</p>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <img src="../public/assets/TurtleNinja.svg" alt="Poster 3" class="h-48 mx-auto mb-4">
-                        <h3 class="text-xl font-semibold mb-2 text-primary">NinjaTurtle</h3>
-                        <p class="text-white">NinjaTurtle suit quatre tortues mutantes expertes en arts martiaux qui
-                             combattent le crime à New York. Action, humour et combats épiques sont au rendez-vous !</p>
+                    
+                    <div class="flex gap-10 items-center mb-8">
+                        <!-- NinjaTurtle : Texte à gauche, image à droite -->
+                        <div class="w-1/2 text-justify pr-4">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">NinjaTurtle</h3>
+                            <p class="text-white text-justify">NinjaTurtle suit quatre tortues mutantes expertes en arts martiaux qui combattent le
+                                crime à New York. Action, humour et combats épiques sont au rendez-vous !</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="../public/assets/TurtleNinja.svg" alt="Poster 3" class="h-64 mx-auto mb-4">
+                        </div>
                     </div>
                 </div>
             </div>
